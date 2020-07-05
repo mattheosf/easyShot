@@ -11,14 +11,20 @@
 .right-side {
   display: inline-block;
   font-size: 95%;
-  font-style: italic; }
+  font-style: italic; 
+  float: right;
+  margin-right: 34px;
+  margin-top: 8px;
+  font-size: 16px; }
 
 .connected {
-  color: green; }
+  color: green; 
+  font-weight: 500; }
 
 a.login {
   text-decoration: none;
-  color: red; }
+  color: red;
+  font-weight: 500; }
 
 html, body, main {
   height: auto; }
