@@ -1,0 +1,137 @@
+// CSS Reset
+@import "reset.css";
+// CSS Fonts
+@import "_fonts.scss";
+
+ //variables//
+// colors
+$backgroundApp: #d9dede;
+$headerApp: #3b374a;
+$exotic: #CCB623;
+$lightgray: #848484;
+$sunsetred: #DB0000;
+$bluegem: #34109B;
+$beigetone: #FDF6B3;
+// fonts
+$piedra: "Piedra", cursive;
+$openS: "Open Sans Condensed";
+$raleway: "Raleway";
+$roboto: "Roboto";
+/* Main */ 
+.logo-span {
+font-family: $piedra;
+font-size: 200%;
+}
+html, body, main {
+height: auto;
+}
+body {
+background: $backgroundApp;
+font-family: $openS, $raleway, Sans Serif;
+color: white;
+}
+header {
+background: $headerApp;
+height: 50px;
+box-sizing: border-box;
+padding: 10px 8px 10px 40px;
+box-shadow: 0px 1px 3px black;
+}
+#main-content {
+padding: 5% 10% 10% 10%;
+text-align: center;
+}
+.content-top {
+padding: 15px;
+margin-bottom: 25px;
+}
+.apiimg {
+width: 9%;
+}
+.top-title {
+font-family: $roboto;
+color: $headerApp;
+font-size: 200%;
+text-shadow: 2px 2px white;
+}
+.top-comment {
+color: black;
+margin: 0 25% 0 25%;
+font-size: 120%;
+	.enjoy-txt {
+	display: block;
+	font-size: 115%;
+	}
+}
+.content-middle {
+padding: 15px;
+}
+.middle-title {
+color: black;
+opacity: 0.7;
+font-style: italic;
+font-size: 125%;
+margin-bottom: 5px;
+}
+.all-box {
+margin-top: 25px;
+}
+.button-list {
+display: flex;
+justify-content: space-around;
+margin: 0 10% 25px 10%;
+}
+.site-btn {
+border: 2px solid black;
+border-radius: 5px;
+background-color: black;
+font-family: $roboto;
+font-weight: 400;
+font-size: 110%;
+width: 19%;
+text-transform: uppercase;
+color: white;
+	&:hover {
+	cursor: pointer;
+	color: $headerApp;
+	}
+}
+@media screen and (max-width:1200px) {
+	.site-btn {
+	font-size: 100%;
+	} 
+	.button-list {
+	margin: 0 6% 25px 6%;
+	}
+}
+@media screen and (max-width:901px) {
+    .site-btn {
+	font-size: 85%;
+	width: 45%;
+	min-height: 40px;
+	margin-bottom: 5px;
+		&:last-child {
+		margin-bottom: 0;
+		}
+	} 
+	.button-list {
+	margin: 0 5% 25px 5%;
+	flex-wrap: wrap;
+	}
+	.top-comment {
+	margin: 0 5% 0 5%;
+	}
+	#main-content {
+	padding: 4% 7% 7% 7%;
+	}
+	.logo-span {
+	font-size: 175%;
+	}
+	header {
+	padding-top: 12px;
+	padding-left: 25px;
+	}
+	.apiimg {
+	width: 20%;
+	}
+}
