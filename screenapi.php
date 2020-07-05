@@ -6,7 +6,7 @@ include_once "authentification.php";
 session_start();
 
 // API Key
-$customer_key = "";
+$customer_key = "9807a1";
 $secret_phrase = ""; 
 
 $machine = new ScreenshotMachine($customer_key, $secret_phrase);
@@ -21,7 +21,7 @@ $options['url'] = $_POST["website"];
 // Parameters for screenshot
 $options['dimension'] = "1920x1080";  
 $options['device'] = "desktop";
-$options['format'] = "jpg";
+$options['format'] = "png";
 $options['cacheLimit'] = "0";
 $options['delay'] = "0";
 
@@ -36,7 +36,6 @@ echo 'Your screenshot has been upload on GDrive as ' . $output_file . PHP_EOL . 
 
 if ($output_file  && $client->getAccessToken()) {
 
-	  // Now lets try and send the metadata as well using multipart!
 	  $file = new Google_Service_Drive_DriveFile();
 	  $file->setName("".$output_file."");
 	  $result2 = $service->files->create(
