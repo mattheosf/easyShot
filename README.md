@@ -18,3 +18,9 @@ Any questions or advices regarding this app ? Let me know by sending an email to
 
 {{This is only for testing and practice purpose: improving skills!}}
 
+## Mandatory
+This app uses Google Drive API and requires the installation of the google client.
+CF https://developers.google.com/drive/api/v3/quickstart/php for installation.
+Or with composer: composer require google/apiclient:^2.0 
+
+The credentials file is not available on this project. Please use yours 
