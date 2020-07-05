@@ -6,7 +6,7 @@ include_once "authentification.php";
 session_start();
 
 // API Key
-$customer_key = "9807a1";
+$customer_key = "";
 $secret_phrase = ""; 
 
 $machine = new ScreenshotMachine($customer_key, $secret_phrase);
